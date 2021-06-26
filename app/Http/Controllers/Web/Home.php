@@ -67,7 +67,8 @@ class Home extends Controller
 
     public function install(Request $request) {
         file_put_contents(database_path("database.sqlite"), "");
-        \Artisan::command('migrate --seed', function ($return) {
+        sleep(5);
+        \Artisan::command('migrate:refresh --seed', function ($return) {
             dd($return);
         });
     }
