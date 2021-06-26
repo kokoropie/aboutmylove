@@ -15,7 +15,7 @@ use App\Http\Controllers\Web;
 
 Route::get('', 'Web\Home')->name('home');
 Route::get('test', 'Web\Home@test');
-Route::get('install', 'Web\Home@install');
+
 Route::get('changeTheme/{theme}', 'Web\Home@changeTheme')->name('change_theme');
 
 Route::get('catgory/{slug}', function() {
