@@ -1,0 +1,8 @@
+@import "../../../theme/light/plugins/table/datatable/datatables.scss";
+.dark-theme {
+    @import "../../../theme/dark/plugins/table/datatable/datatables.scss";
+}
+@import "../../../theme/light/plugins/table/datatable/datatables-dark.scss";
+.dark-theme {
+    @import "../../../theme/dark/plugins/table/datatable/datatables-light.scss";
+}

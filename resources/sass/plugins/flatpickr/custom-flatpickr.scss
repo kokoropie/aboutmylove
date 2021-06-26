@@ -1,0 +1,7 @@
+@import "../../theme/light/plugins/flatpickr/custom-flatpickr.scss";
+.dark-theme {
+    @import "../../theme/dark/plugins/flatpickr/custom-flatpickr.scss";
+}
+.flatpickr-innerContainer {
+    justify-content: center;
+}

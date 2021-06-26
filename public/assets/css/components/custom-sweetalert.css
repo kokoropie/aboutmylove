@@ -1,0 +1,36 @@
+/*
+	===============================
+			@Import	Function
+	===============================
+*/
+/*
+	===============================
+			@Import	Mixins
+	===============================
+*/
+.widget-content .row.padding35 .col-md-4 {
+  margin-bottom: 20px;
+}
+
+.btn {
+  margin-right: 5px;
+}
+
+.dark-theme {
+  /*
+  	===============================
+  			@Import	Function
+  	===============================
+  */
+  /*
+  	===============================
+  			@Import	Mixins
+  	===============================
+  */
+}
+.dark-theme .widget-content .row.padding35 .col-md-4 {
+  margin-bottom: 20px;
+}
+.dark-theme .btn {
+  margin-right: 5px;
+}

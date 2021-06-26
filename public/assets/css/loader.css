@@ -1,0 +1,72 @@
+/*
+	===============================
+			@Import	Function
+	===============================
+*/
+/*
+	===============================
+			@Import	Mixins
+	===============================
+*/
+div#load_screen {
+  background: #ecefff;
+  opacity: 1;
+  position: fixed;
+  z-index: 999999;
+  top: 0px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+div#load_screen .loader {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+div#load_screen .loader-content {
+  right: 0;
+  -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.spinner-grow {
+  color: #304aca;
+}
+
+.dark-theme {
+  /*
+  	===============================
+  			@Import	Function
+  	===============================
+  */
+  /*
+  	===============================
+  			@Import	Mixins
+  	===============================
+  */
+}
+.dark-theme div#load_screen {
+  background: #14182d;
+  opacity: 1;
+  position: fixed;
+  z-index: 999999;
+  top: 0px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+.dark-theme div#load_screen .loader {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+.dark-theme div#load_screen .loader-content {
+  right: 0;
+  -ms-grid-row-align: center;
+      align-self: center;
+}
+.dark-theme .spinner-grow {
+  color: #304aca;
+}
