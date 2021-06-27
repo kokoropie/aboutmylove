@@ -20,7 +20,7 @@ Route::prefix('user')->name('user')->group(function () {
         Route::post('register', 'Api\Auth@register')->name('.register');
     });
     Route::middleware(['auth'])->group(function() {
-        Route::post('send_email_active', 'Api\Auth@send_email_active')->name('.send_email_active');
+        Route::get('send_email_active', 'Api\Auth@send_email_active')->name('.send_email_active');
     });
 });
 

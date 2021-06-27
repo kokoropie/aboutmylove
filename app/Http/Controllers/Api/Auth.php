@@ -10,6 +10,7 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Auth as F_Auth;
 
 use App\Models\User;
+use App\Models\System;
 
 class Auth extends Controller
 {
@@ -143,7 +144,8 @@ class Auth extends Controller
                     "text" => "Đăng ký thành công",
                     "actionTextColor" => '#fff',
                     "backgroundColor" => '#8dbf42',
-                    "showAction" => false
+                    "showAction" => false,
+                    "success" => true
                 ];
             } else {
                 $return["alert"] = [
@@ -162,6 +164,7 @@ class Auth extends Controller
         if (F_Auth::check()) {
             $user = F_Auth::user();
             if ($user->detail->active) {
+                $short_title = System::find('short_title');
                 $hash = bcrypt("{$user->user_id}_{$user->username}_{$user->email}");
                 \Mail::to($user->email)
                     ->send(new \App\Mail\User\Active($user, route('user.active', [
